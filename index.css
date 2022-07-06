@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("bg-intro-desktop.png");
+    font-family: Poppins;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100em;
+    min-height: 100vh;
+    color: white;
+    padding:50px
+    
+
+}
+
+main > div{
+    flex: 1;
+    padding: 0 2px;
+}
+
+h1{
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.signbox{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px black;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.signbox p{
+    margin: 0;
+    padding: 0;   
+}
+
+.signbox-blue {
+    background-color: hsl(248, 32%, 49%);
+}
+
+.fcontrol {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.fcontrol small{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    opacity: 0;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-family: Poppins;
+    font-weight: 500;
+  font-size: 16px;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid  hsl(248, 32%, 49%)
+    
+}
+
+button{
+    background-color:  hsl(154, 59%, 51%);
+    border-radius: 5px;
+    color: white;
+    border: 1px solid hsl(154, 59%, 51%);
+    font-family: Poppins;
+    font-weight: 500;
+  font-size: 16px;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+
+small{
+    display: block;
+    color: #bbb;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+small a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+    main {
+        flex-direction: column;
+    }
+}
